@@ -11,7 +11,9 @@ import SwiftUI
 struct LightBulbApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                LightbulbView()
+            }
         }
     }
 }
