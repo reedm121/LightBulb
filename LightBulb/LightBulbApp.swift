@@ -13,6 +13,7 @@ struct LightBulbApp: App {
         WindowGroup {
             NavigationStack{
                 LightbulbView()
+                //RandNumberView()
             }
         }
     }

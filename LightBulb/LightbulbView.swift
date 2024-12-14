@@ -42,7 +42,7 @@ struct LightbulbView: View {
                 NavigationLink("Go to switch >", destination: SwitchView(isLightbulbOn: $isOn))
             }
             
-        }
+        }.navigationTitle("LightbulbView")
     }
 }
 

@@ -21,12 +21,14 @@ struct SwitchView: View {
                 
                 Text(!isLightbulbOn ? "Off" : "On")
             }
-        }
+        }.navigationTitle("SwitchView")
     }
 }
 
 #Preview {
     @Previewable @State var isOn: Bool = false
     
-    SwitchView(isLightbulbOn: $isOn)
+    NavigationStack{
+        SwitchView(isLightbulbOn: $isOn)
+    }
 }
